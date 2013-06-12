@@ -1,0 +1,4 @@
+word1 / type1 / meaning1
+word2 / type2 / meaning2
+word3 / type3 / meaning3;second meaning here
+word4 / type4 / another meaning this:should:suck
