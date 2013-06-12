@@ -58,6 +58,11 @@
     [aCoder encodeObject:_definition forKey:SDWordDefinitionKey];
 }
 
+- (NSString *) description
+{
+    return [NSString stringWithFormat:@"{ %@ ; %@ }", self.type, self.definition];
+}
+
 @end
 
 
@@ -136,6 +141,11 @@
 - (void) addDefinitionWithType:(NSString *)type andDefinition:(NSString *)definition
 {
     [self addDefinition:[SDWordDefinition definitionWithType:type andDefinition:definition]];
+}
+
+- (NSString *) description
+{
+    return [NSString stringWithFormat:@"%@: < %@ : { %@ } >", [super description], self.word, self.definitions];
 }
 
 @end

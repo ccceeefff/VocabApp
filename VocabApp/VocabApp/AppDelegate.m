@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 
 #import "TrainingViewController.h"
+#import "MainViewController.h"
+#import "NetworkData.h"
 
 @implementation AppDelegate
 
@@ -23,8 +25,10 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [NetworkData sharedData];
 
-    TrainingViewController *tc = [[[TrainingViewController alloc] init] autorelease];
+    MainViewController *tc = [[[MainViewController alloc] init] autorelease];
     UINavigationController *nc = [[[UINavigationController alloc] initWithRootViewController:tc] autorelease];
     self.window.rootViewController = nc;
     

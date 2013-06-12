@@ -21,6 +21,8 @@
 		967C750D1768C50A0034C1A3 /* SDBaseWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C750C1768C50A0034C1A3 /* SDBaseWordView.m */; };
 		967C75101768D2350034C1A3 /* TrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C750F1768D2350034C1A3 /* TrainingViewController.m */; };
 		967C75141768D2C60034C1A3 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C75131768D2C60034C1A3 /* TestData.m */; };
+		96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3909C1768F23D00D06D9D /* NetworkData.m */; };
+		96E390A11768FB8600D06D9D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A01768FB8600D06D9D /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		967C750F1768D2350034C1A3 /* TrainingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingViewController.m; sourceTree = "<group>"; };
 		967C75121768D2C60034C1A3 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 		967C75131768D2C60034C1A3 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
+		96E3909B1768F23D00D06D9D /* NetworkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkData.h; sourceTree = "<group>"; };
+		96E3909C1768F23D00D06D9D /* NetworkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkData.m; sourceTree = "<group>"; };
+		96E3909F1768FB8600D06D9D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		96E390A01768FB8600D06D9D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,14 +99,13 @@
 		967C74E91768BAD90034C1A3 /* VocabApp */ = {
 			isa = PBXGroup;
 			children = (
+				96E3909E1768FAF700D06D9D /* ViewControllers */,
 				967C75111768D2B90034C1A3 /* Data */,
 				967C75041768C3960034C1A3 /* Views */,
 				967C75001768BB010034C1A3 /* Models */,
 				967C74F21768BAD90034C1A3 /* AppDelegate.h */,
 				967C74F31768BAD90034C1A3 /* AppDelegate.m */,
 				967C74EA1768BAD90034C1A3 /* Supporting Files */,
-				967C750E1768D2350034C1A3 /* TrainingViewController.h */,
-				967C750F1768D2350034C1A3 /* TrainingViewController.m */,
 			);
 			path = VocabApp;
 			sourceTree = "<group>";
@@ -168,8 +173,21 @@
 			children = (
 				967C75121768D2C60034C1A3 /* TestData.h */,
 				967C75131768D2C60034C1A3 /* TestData.m */,
+				96E3909B1768F23D00D06D9D /* NetworkData.h */,
+				96E3909C1768F23D00D06D9D /* NetworkData.m */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		96E3909E1768FAF700D06D9D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				967C750E1768D2350034C1A3 /* TrainingViewController.h */,
+				967C750F1768D2350034C1A3 /* TrainingViewController.m */,
+				96E3909F1768FB8600D06D9D /* MainViewController.h */,
+				96E390A01768FB8600D06D9D /* MainViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +262,8 @@
 				967C750D1768C50A0034C1A3 /* SDBaseWordView.m in Sources */,
 				967C75101768D2350034C1A3 /* TrainingViewController.m in Sources */,
 				967C75141768D2C60034C1A3 /* TestData.m in Sources */,
+				96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */,
+				96E390A11768FB8600D06D9D /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +378,7 @@
 				967C74FF1768BAD90034C1A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

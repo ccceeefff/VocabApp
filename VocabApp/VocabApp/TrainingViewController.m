@@ -9,6 +9,7 @@
 #import "TrainingViewController.h"
 
 #import "TestData.h"
+#import "NetworkData.h"
 
 @interface TrainingViewController ()
 
@@ -22,7 +23,7 @@
     if (self) {
         // Custom initialization
         currentWordView = nil;
-        words = [[TestData randomWords] retain];
+        words = [[[NetworkData sharedData] cachedData] retain];
         currentIndex = 0;
     }
     return self;
