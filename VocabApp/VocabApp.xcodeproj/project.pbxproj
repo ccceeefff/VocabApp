@@ -23,6 +23,7 @@
 		967C75141768D2C60034C1A3 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C75131768D2C60034C1A3 /* TestData.m */; };
 		96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3909C1768F23D00D06D9D /* NetworkData.m */; };
 		96E390A11768FB8600D06D9D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A01768FB8600D06D9D /* MainViewController.m */; };
+		96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A417697DF400D06D9D /* NSMutableArray+Shuffle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		96E3909C1768F23D00D06D9D /* NetworkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkData.m; sourceTree = "<group>"; };
 		96E3909F1768FB8600D06D9D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		96E390A01768FB8600D06D9D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		96E390A317697DF400D06D9D /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		96E390A417697DF400D06D9D /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		967C74E91768BAD90034C1A3 /* VocabApp */ = {
 			isa = PBXGroup;
 			children = (
+				96E390A217697DD200D06D9D /* Util */,
 				96E3909E1768FAF700D06D9D /* ViewControllers */,
 				967C75111768D2B90034C1A3 /* Data */,
 				967C75041768C3960034C1A3 /* Views */,
@@ -190,6 +194,15 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		96E390A217697DD200D06D9D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				96E390A317697DF400D06D9D /* NSMutableArray+Shuffle.h */,
+				96E390A417697DF400D06D9D /* NSMutableArray+Shuffle.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +277,7 @@
 				967C75141768D2C60034C1A3 /* TestData.m in Sources */,
 				96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */,
 				96E390A11768FB8600D06D9D /* MainViewController.m in Sources */,
+				96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

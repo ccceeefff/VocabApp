@@ -13,7 +13,7 @@
 @interface TrainingViewController : UIViewController
 {
     SDTrainingWordView *currentWordView;
-    NSArray *words;
+    NSMutableArray *words;
     NSUInteger currentIndex;
     BOOL animating;
 }

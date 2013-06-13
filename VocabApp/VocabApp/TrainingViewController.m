@@ -10,6 +10,7 @@
 
 #import "TestData.h"
 #import "NetworkData.h"
+#import "NSMutableArray+Shuffle.h"
 
 @interface TrainingViewController ()
 
@@ -23,7 +24,8 @@
     if (self) {
         // Custom initialization
         currentWordView = nil;
-        words = [[[NetworkData sharedData] cachedData] retain];
+        words = [[NSMutableArray alloc] init];
+        [words addObjectsFromArray:[[NetworkData sharedData] cachedData]];
         currentIndex = 0;
     }
     return self;
@@ -33,6 +35,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [words shuffle];
+    
     [self showWord:[words objectAtIndex:currentIndex] fromRight:YES];
     
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStyleBordered target:self action:@selector(nextWord)] autorelease];
@@ -81,6 +85,7 @@
 }
 
 - (void) dealloc {
+    [words release];
     [super dealloc];
 }
 
