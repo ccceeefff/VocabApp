@@ -1,7 +1,7 @@
 abscond / verb / to depart clandestinely; to steal of and hide
 aberrant / adjective / deviating from the norm (noun form: aberration)
 alacrity / noun / eager and enthusiastic willingness
-anomaly / noun / deviation from the normal order, form, or rule; abnormality (adj. form: anomalous
+anomaly / noun / deviation from the normal order, form, or rule; abnormality (adj. form: anomalous)
 approbation / noun / an expression of approval or praise
 arduous / adjective / strenuous, taxing; requiring significant effort
 assuage / verb / to ease or lessen; to appease or pacify
@@ -75,3 +75,152 @@ veracity / noun / truthfulness, honesty
 virulent / adjective / extremely harmful or poisonous; bitterly hostile or antagonistic
 voracious / adjective / having an insatiable appetite for an activity or pursuit; ravenous
 waver / verb / to move to and fro; to sway; to be unsettled in opinion
+abate / verb / to lessen in intensity or degree
+accolade / noun / an expression of praise
+adulation / noun / excessive praise; intense adoration
+aesthetic / adjective / dealing with, appreciative of, or responsive to art or the beautiful
+ameliorate / verb / to make better or more tolerable
+ascetic / noun / one who practices rigid self-denial
+avarice / noun / greed, esp. for wealth (adj. form avaricious)
+axiom / noun / a universally recognized principle (adj. form: axiomatic)
+burgeon / verb / to grow rapidly or flourish
+bucolic / adjective / rustic and pastoral; characteristic of rural areas and their inhabitants
+cacophony / noun / harsh, jarring, discordant sound; dissonance (adj. form: cacophonous)
+canon / noun / an established set of principles or code of laws, often religious in nature (adj. form: canonical)
+castigation / noun / severe criticism or punishment (verb form: castigate)
+catalyst / noun / a substance that accelerates the rate of a chemical reaction without itself changing; a person or thing that causes change
+caustic / adjective / burning or stinging; causing corrosion
+chary / adjective / wary; cautious; sparing
+cogent / adjective / appealing forcibly to the mind or reason; convincing
+complaisance / noun / the willingness to comply with the wishes of others (adj. form: complaisant)
+contentious / adjective / argumentative; quarrelsome; causing controversy or disagreement
+contrite / adjective / regretful; penitent; seeking forgiveness (noun form: contrition)
+culpable / adjective / deserving blame (noun form: culpability)
+dearth / noun / smallness of quantity or number; scarcity; a lack
+demur / verb / to question or oppose
+didactic / adjective / intended to teach or instruct
+discretion / noun / cautious reserve in speech; ability to make responsible decisions (adj. form: discreet)
+disinterested / adjective / free of bias or self-interest; impartial
+dogmatic / adjective / expressing a rigid opinion based on unproved or improvable principles (noun form: dogma)
+ebullience / noun / the quality of lively or enthusiastic expression of thoughts and feelings (adj. form: ebullient)
+eclectic / adjective / composed of elements drawn from various sources
+elegy / noun / a mournful poem, esp. one lamenting the dead (adj. form: elegiac)
+emollient / adjective, noun / soothing, esp. to the skin; making less harsh; mollifying; an agent that softens or smoothes the skin
+empirical / adjective / based on observation on experiment
+enigmatic / adjective / mysterious; obscure; difficult to understand (noun form: enigma)
+ephemeral / adjective / brief; fleeting
+esoteric / adjective / intended for or understood by a small, specific group
+eulogy / noun / a speech honoring the dead (verb form: eulogize)
+exonerate / verb / to remove blame
+facetious / adjective / playful; humorous
+fallacy / noun / an invalid or incorrect notion; a mistaken belief (adj. form: fallacious)
+furtive / adjective / marked by stealth; covert; surreptitious
+gregarious / adjective / sociable; outgoing; enjoying the company of other people
+harangue / verb, noun / to deliver a pompous speech or tirade; a long, pompous speech
+heretical / adjective / violating accepted dogma or convention (noun form: heresy)
+hyperbole / noun / an exaggerate statement, often used as a figure of speech (adj. form hyperbolic)
+impecunious / adjective / lacking funds; without money
+incipient / adjective / beginning to come into being or to become apparent
+inert / adjective / unmoving; lethargic; sluggish
+innocuous / adjective / harmless; causing no damage
+intransigent / adjective / refusing to compromise (noun form: intransigence)
+inveigle / verb / to obtain by deception or flattery
+morose / adjective / sad; sullen; melancholy
+odious / adjective / evoking intense aversion or dislike
+opaque / adjective / impenetrable by light; not reflecting light
+oscillation / noun / the act or state of swinging back and forth with a steady, uninterrupted rhythm (verb form: oscillate)
+penurious / adjective / penny-pinching; excessively thrifty; ungenerous
+pernicious / adjective / extremely harmful; potentially causing death
+peruse / verb / to examine with great care (noun form: perusal)
+pious / adjective / extremely reverent or devout; showing strong religious devotion (noun form: piety)
+precursor / noun / one that precedes and indicates or announces another
+preen / verb / to dress up; to primp; to groom oneself with elaborate care
+prodigious / adjective / abundant in size, force, or extent; extraordinary
+prolific / adjective / producing large volumes or amounts; productive
+putrefy / verb / to rot; to decay and give off foul odor (adj. form: putrid)
+quaff / verb / to drink deeply
+quiescence / noun / stillness; motionlessness; quality of being at rest (adj. form: quiescent)
+redoubtable / adjective / awe-inspiring; worthy of honor
+sanction / noun, verb / authoritative permission or approval; a penalty intended to enforce compliance; to give permission or authority to
+satire / noun / a literary work that ridicules or criticizes a human vice through humor or derision (adj. form: satirical)
+squalid / adjective / sordid; wretched and dirty as from neglect (noun form: squalor)
+stoic / adjective / indifferent to or unaffected by pleasure or pain; steadfast (noun form: stoicism)
+supplant / verb / to take the place of; supersede
+torpid / adjective / lethargic; sluggish; dormant (noun form: torpor)
+ubiquitous / adjective / existing everywhere at the same time; constantly encountered; widespread
+urbane / adjective / sophisticated; refined; elegant (noun form: urbanity)
+vilify / verb / to defame; to characterize harshly
+viscous / adjective / thick; sticky (noun form: viscosity)
+acumen / noun / keen, accurate judgment or insight
+adulterate / verb / to reduce purity by combining with inferior ingredients
+amalgamate / verb / to combine several elements into a whole (noun form: amalgamation)
+archaic / adjective / outdated; associated with an earlier, perhaps more primitive, time
+aver / verb / to state as a fact; to declare or assert
+bolster / verb / to provide support or reinforcement
+bombastic / adjective / pompous; grandiloquent (noun form: bombast)
+diatribe / noun / a harsh denunciation
+dissemble / verb/ to disguise or conceal; to mislead
+eccentric / adjective / departing from norms or conventions
+endemic / adjective / characteristic of or often found in a particular locality, region, or people
+evanescent / adjective / tending to disappear like vapor; vanishing
+exacerbate / verb / to make worse or more severe
+fervent / adjective / greatly emotional or zealous (noun form: fervor)
+fortuitous / adjective / happening by accident or chance
+germane / adjective / relevant to the subject at hand; appropriate in subject matter
+grandiloquence / noun / pompous speech or expression (adj. form: grandiloquent)
+hackneyed / adjective / rendered trite or commonplace by frequent usage
+halcyon / adjective / calm and peaceful
+hedonism / noun / devotion to pleasurable pursuits, esp. to the pleasures of the senses (a hedonist is someone who pursues pleasure)
+hegemony / noun / the consistent dominance of one state or ideology over others
+iconoclast / noun / one who attacks or undermines traditional conventions or institutions
+idolatrous / adjective / given to intense or excessive devotion to something (noun form: idolatry)
+impassive / adjective / revealing no emotion
+imperturbable / adjective / marked by extreme calm, impassivity and steadiness
+implacable / adjective / not capable of being appeased or significantly changed
+impunity / noun / immunity from punishment or penalty
+inchoate / adjective / in an initial stage; not fully formed
+infelicitous / adjective / unfortunate; inappropriate 
+insipid / adjective / without taste or flavor; lacking in spirit; bland
+loquacious / adjective / extremely talkative (noun form: loquacity)
+luminous / adjective / characterized by brightness and the emission of light
+malevolent / adjective / having or showing often vicious ill will, spite, or hatred (noun form: malevolence)
+malleable / adjective / capable of being shaped or formed; tractable; pliable
+mendacity / noun / the condition of being untruthful; dishonesty (adj. form: mendacious)
+meticulous / adjective / characterized by extreme care precision; attention to detail
+misanthrope / noun / one who hates all other humans (adj. form: misanthropic)
+mitigate / verb / to make or become less severe or intense; to moderate
+obdurate / adjective / unyielding; hardhearted; intractable
+obsequious / adjective / exhibiting a fawning attentiveness
+occlude / verb / to obstruct or block
+opprobrium / noun / disgrace; contempt; scorn
+pedagogy / noun / the profession or principles of teaching, or instructing
+pedantic / adjective / overly concerned with the trivial details of learning or education; show-offish about one's knowledge
+penury / noun / poverty; destitution
+pervasive / adjective / having the tendency to permeate or spread throughout
+pine / verb / to yearn intensely; to languish; to lose vigor
+pirate / verb / to illegally use or reproduce
+pith / noun / the essential or central part
+pithy / adjective / precise and brief
+placate / verb / to appease; to calm by making concessions
+platitude / noun / a superficial remark, esp. one offered as meaningful
+plummet / verb / to plunge or drop straight down
+polemical / adjective / controversial; argumentative
+prodigal / adjective / recklessly wasteful; extravagant; profuse; lavish
+profuse / adjective / given or coming forth abundantly; extravagant
+proliferate / verb / to grow or increase swiftly and abundantly
+queries / noun / questions; inquiries; doubts in the mind; reservations
+querulous / adjective / prone to complaining or grumblings; peevish
+rancorous / adjective / characterized by bitter, long-lasting resentment (noun form: rancor)
+recalcitrant / adjective / obstinately defiant of authority; difficult to manage
+repudiate / verb / to refuse to have anything to do with; disown
+rescind / verb / to invalidate; to repeal; to retract
+reverent / adjective / marked by, feeling, or expressing a feeling of profound awe and respect (noun form: reverence)
+rhetoric / noun / the art or study of effective use of language for communication and persuasion
+salubrious / adjective / promoting health or well-being
+solvent / adjective / able to meet financial obligations; able to dissolve another substance
+specious / adjective / seeming true, but actually being fallacious; misleadingly attractive; plausible but false
+spurious / adjective / lacking authenticity or validity; false; counterfeit
+subpoena / noun / a court order requiring appearance and/or testimony
+succinct / adjective / brief; concise
+superfluous / adjective / exceeding what is sufficient or necessary
+surfeit / noun, verb / an overabundant supply; excess; to feed or supply to excess
