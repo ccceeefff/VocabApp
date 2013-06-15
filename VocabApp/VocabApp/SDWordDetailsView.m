@@ -24,7 +24,7 @@
         // Initialization code
         
         self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-                
+
         _containerView = [[UIScrollView alloc] initWithFrame:self.bounds];
         _containerView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self addSubview:_containerView];
@@ -78,7 +78,7 @@
     label.numberOfLines = 999;
     label.textColor = [UIColor blackColor];
     [label sizeToFit];
-    label.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
+    label.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
 }
 
 - (void) refreshData
