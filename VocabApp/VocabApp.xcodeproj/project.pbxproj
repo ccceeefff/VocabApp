@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96652EE2176C0D3000CD5A52 /* SDWordDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96652EE1176C0D3000CD5A52 /* SDWordDetailsView.m */; };
 		967C74E41768BAD90034C1A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967C74E31768BAD90034C1A3 /* UIKit.framework */; };
 		967C74E61768BAD90034C1A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967C74E51768BAD90034C1A3 /* Foundation.framework */; };
 		967C74E81768BAD90034C1A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967C74E71768BAD90034C1A3 /* CoreGraphics.framework */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96652EE0176C0D3000CD5A52 /* SDWordDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWordDetailsView.h; sourceTree = "<group>"; };
+		96652EE1176C0D3000CD5A52 /* SDWordDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWordDetailsView.m; sourceTree = "<group>"; };
 		967C74E01768BAD90034C1A3 /* VocabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967C74E31768BAD90034C1A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		967C74E51768BAD90034C1A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96652EDF176C0D0D00CD5A52 /* WordDetails */ = {
+			isa = PBXGroup;
+			children = (
+				96652EE0176C0D3000CD5A52 /* SDWordDetailsView.h */,
+				96652EE1176C0D3000CD5A52 /* SDWordDetailsView.m */,
+			);
+			name = WordDetails;
+			sourceTree = "<group>";
+		};
 		967C74D71768BAD90034C1A3 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +152,7 @@
 		967C75041768C3960034C1A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				96652EDF176C0D0D00CD5A52 /* WordDetails */,
 				967C75071768C3CE0034C1A3 /* Training */,
 				967C75061768C3C50034C1A3 /* Identify */,
 				967C75051768C3BC0034C1A3 /* FlashCards */,
@@ -278,6 +291,7 @@
 				96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */,
 				96E390A11768FB8600D06D9D /* MainViewController.m in Sources */,
 				96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */,
+				96652EE2176C0D3000CD5A52 /* SDWordDetailsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
