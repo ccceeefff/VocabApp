@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 #import "SDTrainingWordView.h"
+#import "SDWordDetailsView.h"
 
 @interface TrainingViewController : UIViewController
 {
-    SDTrainingWordView *currentWordView;
+    SDWordDetailsView *currentWordView;
     NSMutableArray *words;
     NSUInteger currentIndex;
     BOOL animating;

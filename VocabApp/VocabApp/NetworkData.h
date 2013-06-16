@@ -16,7 +16,7 @@
 
 @interface NetworkData : NSObject
 {
-    NSArray *_data;
+    NSDictionary *_data;
 }
 
 + (NetworkData *) sharedData;

@@ -10,6 +10,8 @@
 #import "NetworkData.h"
 
 #import "TrainingViewController.h"
+#import "WordListViewController.h"
+#import "WordDetailsViewController.h"
 
 @interface MainViewController ()
 
@@ -50,8 +52,18 @@
     trainingButton.autoresizingMask = ~UIViewAutoresizingNone;
     [trainingButton addTarget:self action:@selector(trainingPressed) forControlEvents:UIControlEventTouchUpInside];
     
+    listButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [listButton setTitle:@"List" forState:UIControlStateNormal];
+    [self.view addSubview:listButton];
+    listButton.frame = CGRectMake(0, 0, 9999, 9999);
+    [listButton sizeToFit];
+    listButton.center = CGPointMake(trainingButton.center.x, trainingButton.center.y + 60);
+    listButton.autoresizingMask = ~UIViewAutoresizingNone;
+    [listButton addTarget:self action:@selector(listPressed) forControlEvents:UIControlEventTouchUpInside];
+    
     if([[NetworkData sharedData] cachedData] == nil){
         trainingButton.enabled = NO;
+        listButton.enabled = NO;
     }
     
 }
@@ -65,6 +77,10 @@
 {
     if([[NetworkData sharedData] cachedData] == nil){
         trainingButton.enabled = NO;
+        listButton.enabled = NO;
+    } else {
+        trainingButton.enabled = YES;
+        listButton.enabled = YES;
     }
 }
 
@@ -75,11 +91,34 @@
     [self presentViewController:nc animated:YES completion:nil];
 }
 
+- (void) listPressed {
+    WordListViewController *tc = [[[WordListViewController alloc] init] autorelease];
+    tc.hidesBottomBarWhenPushed = YES;
+    UINavigationController *nc = [[[UINavigationController alloc] initWithRootViewController:tc] autorelease];
+    WordDetailsViewController *vc = [[[WordDetailsViewController alloc] init] autorelease];
+    vc.hidesBottomBarWhenPushed = YES;
+    UINavigationController *nc2 = [[[UINavigationController alloc] initWithRootViewController:vc] autorelease];
+    //self.window.rootViewController = nc;
+    
+    tc.detailsViewController = vc;
+    
+    UISplitViewController *sp = [[[UISplitViewController alloc] init] autorelease];
+    sp.viewControllers = [NSArray arrayWithObjects:nc, nc2, nil];
+    sp.delegate = vc;
+    sp.hidesBottomBarWhenPushed = YES;
+    //[self presentViewController:sp animated:YES completion:nil];
+    //[self.navigationController pushViewController:sp animated:YES];
+    UITabBarController *tb = [[[UITabBarController alloc] init] autorelease];
+    tb.viewControllers = [NSArray arrayWithObject:sp];
+    [self presentViewController:tb animated:YES completion:NO];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     trainingButton = nil;
+    listButton = nil;
 }
 
 @end

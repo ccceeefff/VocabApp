@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "TrainingViewController.h"
+
 #import "MainViewController.h"
 #import "NetworkData.h"
 

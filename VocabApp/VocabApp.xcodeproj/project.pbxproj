@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		96652EE2176C0D3000CD5A52 /* SDWordDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96652EE1176C0D3000CD5A52 /* SDWordDetailsView.m */; };
+		96652EE6176C1B4100CD5A52 /* WordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96652EE5176C1B4100CD5A52 /* WordListViewController.m */; };
+		96652EE9176C201700CD5A52 /* WordDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96652EE8176C201700CD5A52 /* WordDetailsViewController.m */; };
 		967C74E41768BAD90034C1A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967C74E31768BAD90034C1A3 /* UIKit.framework */; };
 		967C74E61768BAD90034C1A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967C74E51768BAD90034C1A3 /* Foundation.framework */; };
 		967C74E81768BAD90034C1A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967C74E71768BAD90034C1A3 /* CoreGraphics.framework */; };
@@ -22,6 +24,7 @@
 		967C750D1768C50A0034C1A3 /* SDBaseWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C750C1768C50A0034C1A3 /* SDBaseWordView.m */; };
 		967C75101768D2350034C1A3 /* TrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C750F1768D2350034C1A3 /* TrainingViewController.m */; };
 		967C75141768D2C60034C1A3 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C75131768D2C60034C1A3 /* TestData.m */; };
+		96D2D8FA176C74E400B90F15 /* FlashCardBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2D8F9176C74E400B90F15 /* FlashCardBaseView.m */; };
 		96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3909C1768F23D00D06D9D /* NetworkData.m */; };
 		96E390A11768FB8600D06D9D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A01768FB8600D06D9D /* MainViewController.m */; };
 		96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A417697DF400D06D9D /* NSMutableArray+Shuffle.m */; };
@@ -30,6 +33,10 @@
 /* Begin PBXFileReference section */
 		96652EE0176C0D3000CD5A52 /* SDWordDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWordDetailsView.h; sourceTree = "<group>"; };
 		96652EE1176C0D3000CD5A52 /* SDWordDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWordDetailsView.m; sourceTree = "<group>"; };
+		96652EE4176C1B4100CD5A52 /* WordListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordListViewController.h; sourceTree = "<group>"; };
+		96652EE5176C1B4100CD5A52 /* WordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordListViewController.m; sourceTree = "<group>"; };
+		96652EE7176C201700CD5A52 /* WordDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordDetailsViewController.h; sourceTree = "<group>"; };
+		96652EE8176C201700CD5A52 /* WordDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordDetailsViewController.m; sourceTree = "<group>"; };
 		967C74E01768BAD90034C1A3 /* VocabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967C74E31768BAD90034C1A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		967C74E51768BAD90034C1A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +60,8 @@
 		967C750F1768D2350034C1A3 /* TrainingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingViewController.m; sourceTree = "<group>"; };
 		967C75121768D2C60034C1A3 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 		967C75131768D2C60034C1A3 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
+		96D2D8F8176C74E400B90F15 /* FlashCardBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardBaseView.h; sourceTree = "<group>"; };
+		96D2D8F9176C74E400B90F15 /* FlashCardBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardBaseView.m; sourceTree = "<group>"; };
 		96E3909B1768F23D00D06D9D /* NetworkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkData.h; sourceTree = "<group>"; };
 		96E3909C1768F23D00D06D9D /* NetworkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkData.m; sourceTree = "<group>"; };
 		96E3909F1768FB8600D06D9D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -82,6 +91,17 @@
 				96652EE1176C0D3000CD5A52 /* SDWordDetailsView.m */,
 			);
 			name = WordDetails;
+			sourceTree = "<group>";
+		};
+		96652EE3176C1B1900CD5A52 /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				96652EE4176C1B4100CD5A52 /* WordListViewController.h */,
+				96652EE5176C1B4100CD5A52 /* WordListViewController.m */,
+				96652EE7176C201700CD5A52 /* WordDetailsViewController.h */,
+				96652EE8176C201700CD5A52 /* WordDetailsViewController.m */,
+			);
+			name = Listing;
 			sourceTree = "<group>";
 		};
 		967C74D71768BAD90034C1A3 = {
@@ -154,7 +174,6 @@
 			children = (
 				96652EDF176C0D0D00CD5A52 /* WordDetails */,
 				967C75071768C3CE0034C1A3 /* Training */,
-				967C75061768C3C50034C1A3 /* Identify */,
 				967C75051768C3BC0034C1A3 /* FlashCards */,
 				967C750B1768C50A0034C1A3 /* SDBaseWordView.h */,
 				967C750C1768C50A0034C1A3 /* SDBaseWordView.m */,
@@ -165,15 +184,10 @@
 		967C75051768C3BC0034C1A3 /* FlashCards */ = {
 			isa = PBXGroup;
 			children = (
+				96D2D8F8176C74E400B90F15 /* FlashCardBaseView.h */,
+				96D2D8F9176C74E400B90F15 /* FlashCardBaseView.m */,
 			);
 			name = FlashCards;
-			sourceTree = "<group>";
-		};
-		967C75061768C3C50034C1A3 /* Identify */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Identify;
 			sourceTree = "<group>";
 		};
 		967C75071768C3CE0034C1A3 /* Training */ = {
@@ -199,6 +213,7 @@
 		96E3909E1768FAF700D06D9D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				96652EE3176C1B1900CD5A52 /* Listing */,
 				967C750E1768D2350034C1A3 /* TrainingViewController.h */,
 				967C750F1768D2350034C1A3 /* TrainingViewController.m */,
 				96E3909F1768FB8600D06D9D /* MainViewController.h */,
@@ -292,6 +307,9 @@
 				96E390A11768FB8600D06D9D /* MainViewController.m in Sources */,
 				96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */,
 				96652EE2176C0D3000CD5A52 /* SDWordDetailsView.m in Sources */,
+				96652EE6176C1B4100CD5A52 /* WordListViewController.m in Sources */,
+				96652EE9176C201700CD5A52 /* WordDetailsViewController.m in Sources */,
+				96D2D8FA176C74E400B90F15 /* FlashCardBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

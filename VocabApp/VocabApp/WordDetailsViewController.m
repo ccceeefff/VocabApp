@@ -37,6 +37,13 @@
     _detailsView.frame = self.view.bounds;
     _detailsView.word = self.word;
     [self.view addSubview:_detailsView];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStyleDone target:self action:@selector(returnToHome)];
+}
+
+- (void) returnToHome
+{
+    [self.tabBarController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void) didReceiveMemoryWarning

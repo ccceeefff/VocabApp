@@ -36,6 +36,14 @@
     
     self.words = [NSArray arrayWithArray:[[NetworkData sharedData] cachedData]];
     
+    self.words = [self.words sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        
+        SDWord *w1 = obj1;
+        SDWord *w2 = obj2;
+        
+        return [w1.word compare:w2.word];
+    }];
+    
     CGRect bounds = self.view.bounds;
     
     _tableView = [[UITableView alloc] initWithFrame:bounds style:UITableViewStylePlain];

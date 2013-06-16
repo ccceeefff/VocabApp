@@ -47,9 +47,9 @@
 
 - (void) showWord:(SDWord *)word fromRight:(BOOL)RightOrLeft
 {
-    SDTrainingWordView *wordView = [[SDTrainingWordView alloc] initWithFrame:self.view.bounds];
+    SDWordDetailsView *wordView = [[SDWordDetailsView alloc] initWithFrame:self.view.bounds];
     wordView.word = word;
-    SDTrainingWordView *prevWord = currentWordView;
+    SDWordDetailsView *prevWord = currentWordView;
     currentWordView = [wordView retain];
     
     UIViewAnimationOptions options = UIViewAnimationCurveEaseInOut | ( RightOrLeft ? UIViewAnimationOptionTransitionFlipFromRight : UIViewAnimationOptionTransitionFlipFromLeft);

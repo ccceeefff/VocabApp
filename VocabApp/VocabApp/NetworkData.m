@@ -55,25 +55,37 @@
 
 - (void) parseJSONData:(id)jsonData
 {
-    // assume it's an array cos that's how we defined it
-    NSMutableArray *sdWords = [NSMutableArray array];
-    NSArray *jsonWords = jsonData;
-    for(NSDictionary *jsonWord in jsonWords){
-        NSString *wWord = [jsonWord objectForKey:@"word"];
-        NSString *wType = [jsonWord objectForKey:@"type"];
-        NSString *wDef = [jsonWord objectForKey:@"definition"];
+
+    NSMutableDictionary *words = [[NSMutableDictionary alloc] init];
+    NSDictionary *results = (NSDictionary *)jsonData;
+    for(NSString *key in [results allKeys]){
+        NSDictionary *wordObject = [results objectForKey:key];
+        SDWord *word = [SDWord createWord:key];
         
-        SDWord *word = [SDWord createWord:wWord];
-        [word addDefinitionWithType:wType andDefinition:wDef];
-        [sdWords addObject:word];
+        // we know the word, lets get the definitions and groups
+        NSArray *definitions = [wordObject objectForKey:@"definitions"];
+        for(NSDictionary *def in definitions){
+            NSString *type = [def objectForKey:@"type"];
+            NSString *definition = [def objectForKey:@"definition"];
+            [word addDefinitionWithType:type andDefinition:definition];
+        }
+        
+        NSArray *groups = [wordObject objectForKey:@"groups"];
+        for(NSString *group in groups){
+            [word addGroup:group];
+        }
+        
+        // store the object
+        [words setObject:word forKey:key];
     }
     
     //write this to the cache file
-    BOOL result = [NSKeyedArchiver archiveRootObject:sdWords toFile:[self cacheFileName]];
+    BOOL result = [NSKeyedArchiver archiveRootObject:words toFile:[self cacheFileName]];
     NSLog(@"path: %@", [self cacheFileName]);
     NSLog(@"write result: %@", result ? @"success" : @"failure");
     
-    NSLog(@"sd words: %@", sdWords);
+    NSLog(@"sd words: %@", words);
+    [words release];
     
     //release the old cache file
     [_data release];
@@ -89,7 +101,7 @@
     if(_data == nil){
         _data = [[NSKeyedUnarchiver unarchiveObjectWithFile:[self cacheFileName]] retain];
     }
-    return _data;
+    return [_data allValues];
 }
 
 @end
