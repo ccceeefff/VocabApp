@@ -16,7 +16,7 @@ connoisseur / noun / an informed and astute judge in matters of taste; expert
 convoluted / adjective / complex or complicated
 disabuse / verb / to undeceive; to set right
 discordant / adjective / conflicting; dissonant or harsh sound
-disparate / adjective / fundamentally distint or dissimilar
+disparate / adjective / fundamentally distinct or dissimilar
 effrontery / noun / extreme boldness; presumptuousness
 eloquent / adjective / well-spoken, expressive, articulate (noun form: eloquence)
 enervate / verb / to weaken; to reduce in vitality
@@ -224,3 +224,209 @@ subpoena / noun / a court order requiring appearance and/or testimony
 succinct / adjective / brief; concise
 superfluous / adjective / exceeding what is sufficient or necessary
 surfeit / noun, verb / an overabundant supply; excess; to feed or supply to excess
+tenacity / noun / the quality of adherence or persistence to something valued; persistent determination (adj. form: tenacious)
+tenuous / adjective / having little substance or strength; flimsy; weak
+tirade / noun / a long and extremely critical speech; a harsh denunciation
+transient / adjective / fleeting; passing quickly; brief
+zealous / adjective / fervent; ardent; impassioned, devoted to a cause (a zealot is a zealous person)
+acerbic / adjective / having a sour or bitter taste or character; sharp; biting
+aggrandize / verb / to increase in intensity, power, influence or prestige
+alchemy / noun / a medieval science aimed as the transmutation of metals, esp. base metals into gold (an alchemist is one who practices alchemy)
+amenable / adjective / agreeable; responsive to suggestion
+anachronism / noun / something or someone out of place in terms of historical or chronological context
+astringent / adjective, noun / having a tightening effect on living tissue; harsh; severe; something with a tightening effect on tissue
+contiguous / adjective / sharing a border; touching; adjacent
+convention / noun / a generally agreed-upon practice or attitude
+credulous / adjective / tending to believe too readily; gullible (noun form: credulity)
+cynicism / noun / an attitude or quality of belief that all people are motivated by selfishness (adj. form cynical)
+decorum / noun / polite or appropriate conduct or behavior (adj. form: decorous)
+derision / noun / scorn, ridicule, contemptuous treatment (adj. form: derisive; verb form: deride)
+desiccate / noun / to dry out or dehydrate; to make dry or dull
+dilettante / noun / one with an amateurish or superficial interesest in the arts or a branch of knowledge
+disparage / verb / to slight or belittle
+divulge / verb / to disclose something secret
+fawn / verb / to flatter or praise excessively
+flout / verb / to show contempt for, as in a rule or convention
+garrulous / adjective / pointlessly talkative, talking too much
+glib / adjective / marked by ease or informality; nonchalant; lacking in depth; superficial
+hubris / noun / overbearing presumption or pride; arrogance
+imminent / adjective / about to happen; impending
+immutable / adjective / not capable of change
+impetuous / adjective / hastily or rashly energetic; impulsive and vehement
+indifferent / adjective / having no interest or concern; showing no bias or prejudice
+inimical / adjective / damaging; harmful; injurious
+intractable / adjective / not easily managed or directed; stubborn; obstinate
+intrepid / adjective / steadfast and courageous
+laconic / adjective / using few words; terse
+maverick / noun / an independent individual who does not go along with a group or party
+mercurial / adjective / characterized by rapid and unpredictable change in mood
+mollify / verb / to calm or soothe; to reduce in emotional intensity
+neophyte / noun / a recent convert; a beginner; novice
+obfuscate / verb / to deliberately obscure; to make confusing
+obstinate / adjective / stubborn; hardheaded; uncompromising
+ostentatious / adjective / characterized by or given to pretentious display; showy
+pervade / verb / to permeate throughout (adj. form: pervasive)
+phlegmatic / adjective / calm; sluggish; unemotional
+plethora / noun / an overabundance; a surplus
+pragmatic / adjective / practical rather than idealistic
+presumptuous / adjective / overstepping due bounds (as of propriety or courtesy; taking liberties
+pristine / adjective / pure; uncorrupted; clean
+probity / noun / adherence to highest principles; complete and confirmed integrity; uprightness
+proclivity / noun / a natural predisposition or inclination
+profligate / adjective / excessively wasteful; recklessly extravagant (noun form: profligacy)
+propensity / noun / a natural inclination or tendency, penchant
+prosaic / adjective / dull; lacking in spirit or imagination
+pungent / adjective / characterized by a strong, sharp smell or taste
+quixotic / adjective / foolishly impractical; marked by lofty romantic ideals
+quotidian / adjective / occurring or recurring daily; commonplace
+rarefy / verb / to make or become thin, less dense, to refine
+recondite / adjective / hidden; concealed; difficult to understand; obscure
+refulgent / adjective / radiant; shiny; brilliant
+renege / verb / to fail to honor a commitment; to go back on a promise
+sedulous / adjective / diligent; persistent; hard-working
+shard / noun / a piece of broken pottery or glass
+soporific / adjective / causing drowsiness; tending to induce sleep
+sparse / adjective / thin; not dense; arranged at widely spaced intervals
+spendthrift / noun / one who spends money wastefully
+subtle / adjective / not obvious; elusive; difficult to discern
+tacit / adjective / implied; not explicitly stated
+terse / adjective / brief and concise in wording
+tout / verb / to publicly praise or promote
+trenchant / adjective / sharply perceptive; keen; penetrating
+unfeigned / adjective / genuine; not false or hypocritical
+untenable / adjective / indefensible; not viable, uninhabitable
+vacillate / verb / to waver indecisively between one course of action or opinion and another; waver
+variegated / adjective / multicolored; characterized by a variety of patches of different color
+vexation / noun / annoyance, irritation (verb form: vex)
+vigilant / adjective / alertly watchful (noun form: vigilance)
+vituperate / verb / to use harsh, condemnatory language, to abuse or censure severely or abusively; berate
+volatile / adjective / readily changing to a vapor, changeable; fickle; explosive (noun form: volatility)
+alloy / verb / to commingle; to debase by mixing with something inferior; unalloyed means pure
+appropriate / verb / to take for one's own use, confiscate
+arrest, arresting / verb, adjective / to suspend; to engage; holding one's attention: as in arrested adolescence, an arresting portrait
+august / adjective / majestic, venerable
+bent / noun / leaning, inclination, proclivity, tendency: He had a naturally artistic bent.
+broach / verb / bring up, announce, begin to talk about
+brook / verb / to tolerate, endure, countenance
+cardinal / adjective / major, as in cardinal sin
+chauvinist / noun / a blindly devoted patriot
+color / verb / to change as if by dyeing, i.e., to distort, gloss or affect (usually the first): Yellow journalism colored the truth.
+consequential / adjective / pompous, self-important (primary definitions are: logically following; important)
+damp / verb / to diminish the intensity or check the vibration of a sound
+die / noun / a tool for shaping, as in a tool-and-die shop
+essay / verb / a test or try; attempt, experiment: The newly born fawn essayed a few wobbly steps.
+exact / verb / to demand, call for, require, take: Even a victorious war exacts a heavy price
+fell / verb / to cause to fall by striking: The lumberjacks arrived and felled many trees.
+fell / adjective / inhumanly cruel: Fell beasts surrounded the explorers
+flag / verb / to sag or droop, to become spiritless, to decline: Think of a flag on a windless day, as in her flagging spirits
+flip / adjective / sarcastic, impertinent, as in flippant: a flip remark
+ford / verb / to wade across the shallow part of a river or stream
+grouse / verb / to complain or grumble
+guy / noun, verb / a rope, core, or cable attached to something as a brace or guide; to steady or reinforce using a guy: Think guide.
+intimate / verb / to imply, suggest, or insinuate: Are you intimating that I cannot be trusted?
+list / verb / to tilt or lean to one side: The ship's broken mast listed helplessly in the wind
+lumber / verb / to move heavily and clumsily: Lumbering giants on land, walruses are actually graceful swimmers
+meet / adjective / fitting, proper: It is altogether meet that Jackie Robinson is in the baseball hall of fame.
+milk / verb / to exploit, to squeeze every last ounce of: I milked the position for all it was worth
+mince / verb / pronounce or speak affectedly, euphemize, speak too carefully: Don't mince words. Also, to take tiny steps. tiptoe
+nice / adjective / exacting, fastidious, extremely precise: He made a nice distinction between the two cases.
+obtain / adjective / to be established, accepted or customary: Those standards no longer obtain
+occult / adjective / hidden, concealed, beyond comprehension
+pedestrian / adjective / commonplace, trite, unremarkable, quotiditian
+pied / adjective / multicolored, usually in blotches: The Pied Piper of Hamlin was so called because of his multicolored coat.
+pine / verb / to lose vigor (as through grief); to yearn
+plastic / adjective / moldable, pliable, not rigid
+pluck / noun / courage, spunk, fortitude: Churchill's speeches inspired the pluck of his countrymen during the war.
+prize / verb / to pry, to press or force with a lever; something taken by force, spoils: The information was prized from him.
+rail / verb / to complain about bitterly: Early American progressives railed against the railroad barons.
+rent / verb, noun / torn, past of rend: He rent his garments; and opening or tear caused by such: a large rent in the fabric
+quail / verb / to lose courage, turn frightened
+qualify / verb / to limit: Let me qualify that statement
+sap / verb / to enervate or weaken the vitality of: That race sapped my strength
+sap / noun / a fool or nitwit: Don't be a sap!
+scurvy / adjective / exceptional, unusual, odd: He was singularly well-suited for the job.
+stand / noun / a group of trees
+steep / verb / to saturate or completely soak, as in to let a tea bag steep: She was steeped in esoteric knowledge
+strut / noun / the supporting structural cross-part of a wing
+table / verb / to remove (as a parliamentary motion) from consideration: They tabled the motion and will consider it again later.
+tender / verb / to proffer or offer: He tendered his resignation
+waffle / verb / to equivocate; to change one's position: His detractors say that the President waffles too much; he can never make up his mind.
+wag / noun / wit, joker: Groucho Marx was a well-known wag.
+abjure / verb / to renounce or reject solemnly; to recant; to avoid
+adumbrate / verb / to foreshadow vaguely or intimate; to suggest or outline sketchily; to obscure or overshadow
+anathema / noun / a solemn or ecclesiastical (religious) curse; accursed or thoroughly loathed person or thing
+anodyne / adjective, noun / soothing, something that assuages or allays pain or comforts
+apogee / noun / farthest or highest point; culmination; zenith
+apostate / noun / one who abandons long-held religious or political convictions
+apotheosis / noun / deification, glorification to godliness, an exalted example, a model of excellence or perfection
+asperity / noun / severity, rigor; roughness, harshness; acrimony, irritability
+asseverate / verb / to aver, allege, assert
+assiduous / adjective / diligent, hard-working, sedulous
+augury / noun / omen, portent
+bellicose / adjective / belligerent, pugnacious, warlike
+calumniate / verb / to slander, make a false accusation calumny means slander, aspersion
+captious / adjective / disposed to point out trivial faults, calculated to confuse or entrap in argument
+cavil / verb / to find fault without good reason
+celerity / noun / speed, alacrity; think accelerate
+chimera / noun / an illusion; originally, an imaginary fire-breathing she-monster
+contumacious / adjective / insubordinate, rebellious; contumely means insult, scorn, aspersion
+debacle / noun / rout, fiasco, complete failure: My first attempt at a soufflé was a total
+denouement / noun / an outcome or solution; the unraveling of a plot
+descry / verb / to discriminate or discern
+desuetude / noun / disuse: After years of desuetude, my French skills were finally put to use
+desultory / adjective / random; aimless; marked by a lack of plan or purpose: Her desultory performance impressed no one.
+diaphanous / adjective / transparent, gauzy
+diffident / adjective / reserved, shy, unassuming; lacking in self-confidence: Surprisingly, the CEO of the corporation had been a diffident youth.
+dirge / noun / a song of grief or lamentation: We listened to the slow, funereal dirge.
+encomium / noun / glowing and enthusiastic praise; panegyric, tribute, eulogy
+eschew / verb / to shun or avoid: She chose to eschew the movie theater, preferring to watch DVDs at home.
+excoriate / verb / to censure scathingly, to upbraid
+execrate / verb / denounce, feel loathing for, curse, declare to be evil
+exegesis / noun / critical examination, explication
+expiate / verb / to atone or make amends for: Pia Zadora has expiated her movie career by good works and charity.
+extirpate / verb / to destroy, exterminate cut out, exscind
+fatuous / adjective / silly, inanely foolish: I would ignore such a fatuous comment
+fractious / adjective / quarrelsome, rebellious, unruly, refractory, irritable
+gainsay / verb / to deny, dispute, contradict, oppose
+heterodox / adjective / unorthodox, heretical, iconoclastic
+imbroglio / noun / difficult or embarrassing situation
+indefatigable / adjective / not easily exhaustible; tireless, dogged
+ineluctable / adjective / certain, inevitable
+inimitable / adjective / one of a kind, peerless
+insouciant / adjective / unconcerned, carefree, heedless
+inveterate / adjective / deep rooted, ingrained, habitual
+jejune / adjective / vapid, uninteresting, nugatory; childish, immature, puerile
+lubricious / adjective / lewd, wanton, greasy, slippery
+mendicant / noun / a beggar, supplicant
+meretricious / adjective / cheap, gaudy, tawdry, flashy, showy, attracting by false show
+minatory / adjective / menacing, threatening (reminds you of the Minotaur, a threatening creature indeed)
+nadir / noun / low point, perigee
+nonplussed / adjective / baffled, bewildered, at a loss for what to do or think
+obstreperous / adjective / noisily and stubbornly defiant, aggressively boisterous
+ossified / adjective / trending to become more rigid, conventional, sterile, and reactionary with age; literally, turned into bone
+palliate / verb / to make something seem less serious, to gloss over, to make less severe or intense
+panegyric / noun / formal praise, eulogy, encomium; panegyrical means expressing elaborate praise
+parsimonious / adjective / cheap, miserly: A parsimonious person parses out his money with great difficulty
+pellucid / adjective / transparent, easy to understand, limpid
+peroration / noun / the concluding part of a speech; flowery, rhetorical speech
+plangent / adjective / pounding, thundering, resounding
+prolix / adjective / long-winded, verbose; prolixity means verbosity: Mikhail Gorbachev is famous for his prolixity.
+propitiate / verb / to appease; to conciliate; propitious means auspicious, favorable
+puerile / adjective / childish, immature, jejune, nugatory
+puissance / noun / power, strength: puissant means powerful, strong: The senator delivered a puissant speech to the convention.
+pusillanimous / adjective / cowardly, craven
+remonstrate / verb / to protest, object
+sagacious / adjective / having sound judgment; perceptive, wise, like a sage
+salacious / adjective / lustful, lascivious, bawdy
+salutary / adjective / remedial, wholesome, causing improvement
+sanguine / adjective / cheerful, confident, optimistic
+saturnine / adjective / gloomy, dark, sullen, morose
+sententious / adjective / aphoristic or moralistic; epigrammatic; tending to moralize excessively
+stentorian / adjective / extremely loud and powerful
+stygian / adjective / gloomy, dark
+sycophant / noun / toady, servile, self-seeking flatterer; parasite
+tendentious / adjective /biased; showing marked tendencies
+timorous / adjective / timid, fearful, diffident
+tyro / noun / novice, greenhorn, rank amateur
+vitiate / verb / to corrupt, debase, spoil, make ineffective
+voluble / adjective / fluent, verbal, having easy use of spoken language
