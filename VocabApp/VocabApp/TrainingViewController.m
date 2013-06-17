@@ -47,9 +47,12 @@
 
 - (void) showWord:(SDWord *)word fromRight:(BOOL)RightOrLeft
 {
-    SDWordDetailsView *wordView = [[SDWordDetailsView alloc] initWithFrame:self.view.bounds];
-    wordView.word = word;
-    SDWordDetailsView *prevWord = currentWordView;
+    BaseTriviaController *controller = [[BaseTriviaController alloc] initWithWord:word];
+    FlashCardBaseView *wordView = [[FlashCardBaseView alloc] initWithFrame:self.view.bounds andController:controller];
+    wordView.autoresizingMask = ~UIViewAutoresizingNone;
+    [controller release];
+    //wordView.word = word;
+    FlashCardBaseView *prevWord = currentWordView;
     currentWordView = [wordView retain];
     
     UIViewAnimationOptions options = UIViewAnimationCurveEaseInOut | ( RightOrLeft ? UIViewAnimationOptionTransitionFlipFromRight : UIViewAnimationOptionTransitionFlipFromLeft);

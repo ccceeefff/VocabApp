@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SDWord.h"
+
 // Used for retrieving data over the network and caching them on device
 
 #define kNetworkDataURL @"https://raw.github.com/ccceeefff/VocabApp/master/VocabData/VocabData.json"
@@ -23,5 +25,9 @@
 
 - (void) retrieveData;
 - (NSArray *) cachedData;
+
+- (SDWord *) randomWord;
+- (SDWord *) randomOtherWord:(SDWord *)word;
+- (NSArray *) randomWords:(int)count differentFromWord:(SDWord *)word;
 
 @end

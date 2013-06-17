@@ -25,6 +25,7 @@
 		967C75101768D2350034C1A3 /* TrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C750F1768D2350034C1A3 /* TrainingViewController.m */; };
 		967C75141768D2C60034C1A3 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C75131768D2C60034C1A3 /* TestData.m */; };
 		96D2D8FA176C74E400B90F15 /* FlashCardBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2D8F9176C74E400B90F15 /* FlashCardBaseView.m */; };
+		96D9264B176F57A3005441F3 /* BaseTriviaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9264A176F57A3005441F3 /* BaseTriviaController.m */; };
 		96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3909C1768F23D00D06D9D /* NetworkData.m */; };
 		96E390A11768FB8600D06D9D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A01768FB8600D06D9D /* MainViewController.m */; };
 		96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A417697DF400D06D9D /* NSMutableArray+Shuffle.m */; };
@@ -62,6 +63,9 @@
 		967C75131768D2C60034C1A3 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
 		96D2D8F8176C74E400B90F15 /* FlashCardBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardBaseView.h; sourceTree = "<group>"; };
 		96D2D8F9176C74E400B90F15 /* FlashCardBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardBaseView.m; sourceTree = "<group>"; };
+		96D92649176F57A3005441F3 /* BaseTriviaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTriviaController.h; sourceTree = "<group>"; };
+		96D9264A176F57A3005441F3 /* BaseTriviaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTriviaController.m; sourceTree = "<group>"; };
+		96D9264C176F58DB005441F3 /* TriviaQuestionDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriviaQuestionDataSource.h; sourceTree = "<group>"; };
 		96E3909B1768F23D00D06D9D /* NetworkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkData.h; sourceTree = "<group>"; };
 		96E3909C1768F23D00D06D9D /* NetworkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkData.m; sourceTree = "<group>"; };
 		96E3909F1768FB8600D06D9D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 		967C74E91768BAD90034C1A3 /* VocabApp */ = {
 			isa = PBXGroup;
 			children = (
+				96D92648176F5742005441F3 /* GameControllers */,
 				96E390A217697DD200D06D9D /* Util */,
 				96E3909E1768FAF700D06D9D /* ViewControllers */,
 				967C75111768D2B90034C1A3 /* Data */,
@@ -208,6 +213,16 @@
 				96E3909C1768F23D00D06D9D /* NetworkData.m */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		96D92648176F5742005441F3 /* GameControllers */ = {
+			isa = PBXGroup;
+			children = (
+				96D92649176F57A3005441F3 /* BaseTriviaController.h */,
+				96D9264A176F57A3005441F3 /* BaseTriviaController.m */,
+				96D9264C176F58DB005441F3 /* TriviaQuestionDataSource.h */,
+			);
+			name = GameControllers;
 			sourceTree = "<group>";
 		};
 		96E3909E1768FAF700D06D9D /* ViewControllers */ = {
@@ -310,6 +325,7 @@
 				96652EE6176C1B4100CD5A52 /* WordListViewController.m in Sources */,
 				96652EE9176C201700CD5A52 /* WordDetailsViewController.m in Sources */,
 				96D2D8FA176C74E400B90F15 /* FlashCardBaseView.m in Sources */,
+				96D9264B176F57A3005441F3 /* BaseTriviaController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

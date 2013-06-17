@@ -77,8 +77,11 @@
     
     label.numberOfLines = 999;
     label.textColor = [UIColor blackColor];
-    [label sizeToFit];
-    label.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
+    CGPoint origin = label.frame.origin;
+    CGFloat width = label.frame.size.width;
+    CGSize size = [label sizeThatFits:label.frame.size];
+    label.frame = CGRectMake(origin.x, origin.y, width, size.height);
+    label.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
 
 - (void) refreshData

@@ -10,10 +10,12 @@
 
 #import "SDTrainingWordView.h"
 #import "SDWordDetailsView.h"
+#import "FlashCardBaseView.h"
+#import "BaseTriviaController.h"
 
 @interface TrainingViewController : UIViewController
 {
-    SDWordDetailsView *currentWordView;
+    FlashCardBaseView *currentWordView;
     NSMutableArray *words;
     NSUInteger currentIndex;
     BOOL animating;

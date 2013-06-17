@@ -8,8 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
+#import "BaseTriviaController.h"
+
 @interface FlashCardBaseView : UIView
+{
+    BaseTriviaController *_controller;
+    
+    UIView *_questionView;
+    NSMutableArray *_answerViews;
+    NSMutableArray *_answerButtons;
+    
+}
 
+@property (nonatomic, readonly) BaseTriviaController *controller;
 
+- (id) initWithFrame:(CGRect)frame andController:(BaseTriviaController *)controller;
+
+- (void) layoutFlashCard;
+- (void) answerButtonPressed:(UIButton *)sender;
+
+- (UIView *) getQuestionView;
+- (UIView *) getViewForAnswerAtIndex:(NSUInteger)index;
+- (UIButton *) getButtonForChoiceAtIndex:(NSUInteger)index;
 
 @end

@@ -55,7 +55,6 @@
 
 - (void) parseJSONData:(id)jsonData
 {
-
     NSMutableDictionary *words = [[NSMutableDictionary alloc] init];
     NSDictionary *results = (NSDictionary *)jsonData;
     for(NSString *key in [results allKeys]){
@@ -109,6 +108,44 @@
         _data = [[NSKeyedUnarchiver unarchiveObjectWithFile:[self cacheFileName]] retain];
     }
     return [_data allValues];
+}
+
+- (SDWord *) randomWord
+{
+    NSArray *words = [self cachedData];
+    if(words == nil || [words count] == 0) return nil;
+    
+    NSUInteger randIndex = arc4random() % [_data count];
+    return [words objectAtIndex:randIndex];
+}
+
+- (SDWord *)randomOtherWord:(SDWord *)word
+{
+    NSArray *words = [self cachedData];
+    if(words == nil || [words count] == 0) return nil;
+    
+    // if |word| is the only entry in the array
+    if([words count] == 1 && [words containsObject:word]) return nil;
+    
+    SDWord *randomWord = nil;
+    do {
+        randomWord = [self randomWord];
+    } while (randomWord == word);
+    
+    return randomWord;
+}
+
+- (NSArray *) randomWords:(int)count differentFromWord:(SDWord *)word
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    for(int i=0; i<count; i++){
+        [array addObject:[self randomOtherWord:word]];
+    }
+    
+    NSArray *words = [NSArray arrayWithArray:array];
+    [array release];
+    return words;
 }
 
 @end
