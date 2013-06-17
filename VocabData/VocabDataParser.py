@@ -3,6 +3,7 @@ import json
 
 filename = "VocabData.txt"
 groupsInput = "WordGroupData.txt"
+contextInput = "ContextSamples.txt"
 output = "VocabData.json"
 
 source = open(filename)
@@ -29,7 +30,6 @@ source = open(groupsInput)
 
 for line in source:
 	group = line.split(":")
-	print group
 	groupName = group[0].strip()
 	terms = group[1].split(",")
 	for t in terms:
@@ -46,6 +46,29 @@ for line in source:
 			word["groups"] = groups
 		groups.append(groupName)
 		words[term] = word
+
+source = open(contextInput)
+
+for line in source:
+	sample = line.split(":")
+	term = sample[0].strip().lower()
+	context = sample[1].strip()
+	example = sample[2].strip()
+	s = {}
+	s["context"] = context
+	s["example"] = example
+	if words.has_key(term):
+		word = words[term]
+	else :
+		word = {}
+	
+	if word.has_key("samples"):
+		samples = word["samples"]
+	else :
+		samples = []
+		word["samples"] = samples
+	samples.append(s)	
+	words[term] = word
 
 with open(output, 'w') as outfile:
 	json.dump(words, outfile)

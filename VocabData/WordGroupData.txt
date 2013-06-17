@@ -23,7 +23,7 @@ Equal: equitable, equity, tantamount
 Falsehood: apocryphal, canard, chicanery, dissemble, duplicity, equivocate, erroneous, ersatz, fallacious, feigned, guile, mendacious/mendacity, perfidy, prevaricate, specious, spurious
 Family: conjugal, consanguine, distaff, endogamous, filial, fratricide, progenitor, scion
 Favoring/Not Impartial: ardor/ardent, doctrinaire, fervid, partisan, tendentious, zealot
-Forgive: Absolve, acquit, exculpate, exonerate, expiate, palliate, redress, vindicate
+Forgive: absolve, acquit, exculpate, exonerate, expiate, palliate, redress, vindicate
 Funny: chortle, droll, facetious, flippant, gibe, jocular, levity, ludicrous, raillery, riposte, simper
 Gaps/Openings: abatement, aperture, fissure, hiatus, interregnum, interstice, lull, orifice, rent, respite, rift
 Generous/Kind: altruistic, beneficent, clement, largess, magnanimous, munificent, philanthropic, unstinting
