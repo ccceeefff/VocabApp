@@ -75,6 +75,13 @@
             [word addGroup:group];
         }
         
+        NSArray *samples = [wordObject objectForKey:@"samples"];
+        for(NSDictionary *sample in samples){
+            NSString *context = [sample objectForKey:@"context"];
+            NSString *example = [sample objectForKey:@"example"];
+            [word addSampleWithContext:context andExample:example];
+        }
+        
         // store the object
         [words setObject:word forKey:key];
     }
