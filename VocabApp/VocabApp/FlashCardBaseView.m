@@ -94,6 +94,7 @@
         questionView.textAlignment = UITextAlignmentCenter;
         questionView.numberOfLines = 999;
         questionView.font = [UIFont boldSystemFontOfSize:56];
+        questionView.minimumFontSize = 30;
         _questionView = questionView;
         [self addSubview:questionView];
     }

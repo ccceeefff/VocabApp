@@ -11,6 +11,7 @@
 @interface MainViewController : UIViewController
 {
     UIButton *trainingButton;
+    UIButton *trainingButton2;
     UIButton *listButton;
 }
 

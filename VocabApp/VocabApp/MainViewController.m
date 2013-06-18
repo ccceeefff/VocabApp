@@ -44,13 +44,24 @@
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Load Data" style:UIBarButtonItemStyleBordered target:self action:@selector(loadData)] autorelease];
     
     trainingButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [trainingButton setTitle:@"Training" forState:UIControlStateNormal];
+    [trainingButton setTitle:@"Training: Define Word" forState:UIControlStateNormal];
     [self.view addSubview:trainingButton];
     trainingButton.frame = CGRectMake(0, 0, 9999, 9999);
     [trainingButton sizeToFit];
     trainingButton.center = self.view.center;
     trainingButton.autoresizingMask = ~UIViewAutoresizingNone;
-    [trainingButton addTarget:self action:@selector(trainingPressed) forControlEvents:UIControlEventTouchUpInside];
+    trainingButton.tag = TrainingTypeDefineWord;
+    [trainingButton addTarget:self action:@selector(trainingPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    trainingButton2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [trainingButton2 setTitle:@"Training: Find Word" forState:UIControlStateNormal];
+    [self.view addSubview:trainingButton2];
+    trainingButton2.frame = CGRectMake(0, 0, 9999, 9999);
+    [trainingButton2 sizeToFit];
+    trainingButton2.center = CGPointMake(trainingButton.center.x, trainingButton.center.y - 60);
+    trainingButton2.autoresizingMask = ~UIViewAutoresizingNone;
+    trainingButton2.tag = TrainingTypeWordFromDefinition;
+    [trainingButton2 addTarget:self action:@selector(trainingPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     listButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [listButton setTitle:@"List" forState:UIControlStateNormal];
@@ -63,6 +74,7 @@
     
     if([[NetworkData sharedData] cachedData] == nil){
         trainingButton.enabled = NO;
+        trainingButton2.enabled = NO;
         listButton.enabled = NO;
     }
     
@@ -78,14 +90,16 @@
     if([[NetworkData sharedData] cachedData] == nil){
         trainingButton.enabled = NO;
         listButton.enabled = NO;
+        trainingButton2.enabled = NO;
     } else {
         trainingButton.enabled = YES;
         listButton.enabled = YES;
+        trainingButton2.enabled = YES;
     }
 }
 
-- (void) trainingPressed {
-    TrainingViewController *tc = [[[TrainingViewController alloc] init] autorelease];
+- (void) trainingPressed:(UIButton *)button {
+    TrainingViewController *tc = [[[TrainingViewController alloc] initWithTrainingType:button.tag] autorelease];
     UINavigationController *nc = [[[UINavigationController alloc] initWithRootViewController:tc] autorelease];
     
     [self presentViewController:nc animated:YES completion:nil];

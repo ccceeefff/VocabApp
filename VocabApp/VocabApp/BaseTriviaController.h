@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NetworkData.h"
+#import "DefinitionsFilter.h"
+#import "NSMutableArray+Shuffle.h"
 #import "TriviaQuestionDataSource.h"
 #import "SDWord.h"
 

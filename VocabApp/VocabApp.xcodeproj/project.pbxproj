@@ -26,6 +26,10 @@
 		967C75141768D2C60034C1A3 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C75131768D2C60034C1A3 /* TestData.m */; };
 		96D2D8FA176C74E400B90F15 /* FlashCardBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2D8F9176C74E400B90F15 /* FlashCardBaseView.m */; };
 		96D9264B176F57A3005441F3 /* BaseTriviaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9264A176F57A3005441F3 /* BaseTriviaController.m */; };
+		96D9265017700305005441F3 /* DefinitionsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9264F17700305005441F3 /* DefinitionsFilter.m */; };
+		96D9265317700981005441F3 /* GroupsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9265217700981005441F3 /* GroupsFilter.m */; };
+		96D9265617700A13005441F3 /* DefineWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9265517700A13005441F3 /* DefineWordController.m */; };
+		96D9265917700A60005441F3 /* FindWordFromDefinitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9265817700A5F005441F3 /* FindWordFromDefinitionController.m */; };
 		96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3909C1768F23D00D06D9D /* NetworkData.m */; };
 		96E390A11768FB8600D06D9D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A01768FB8600D06D9D /* MainViewController.m */; };
 		96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A417697DF400D06D9D /* NSMutableArray+Shuffle.m */; };
@@ -66,6 +70,14 @@
 		96D92649176F57A3005441F3 /* BaseTriviaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTriviaController.h; sourceTree = "<group>"; };
 		96D9264A176F57A3005441F3 /* BaseTriviaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTriviaController.m; sourceTree = "<group>"; };
 		96D9264C176F58DB005441F3 /* TriviaQuestionDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriviaQuestionDataSource.h; sourceTree = "<group>"; };
+		96D9264E17700305005441F3 /* DefinitionsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinitionsFilter.h; sourceTree = "<group>"; };
+		96D9264F17700305005441F3 /* DefinitionsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefinitionsFilter.m; sourceTree = "<group>"; };
+		96D9265117700981005441F3 /* GroupsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsFilter.h; sourceTree = "<group>"; };
+		96D9265217700981005441F3 /* GroupsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsFilter.m; sourceTree = "<group>"; };
+		96D9265417700A13005441F3 /* DefineWordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineWordController.h; sourceTree = "<group>"; };
+		96D9265517700A13005441F3 /* DefineWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineWordController.m; sourceTree = "<group>"; };
+		96D9265717700A5F005441F3 /* FindWordFromDefinitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWordFromDefinitionController.h; sourceTree = "<group>"; };
+		96D9265817700A5F005441F3 /* FindWordFromDefinitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWordFromDefinitionController.m; sourceTree = "<group>"; };
 		96E3909B1768F23D00D06D9D /* NetworkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkData.h; sourceTree = "<group>"; };
 		96E3909C1768F23D00D06D9D /* NetworkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkData.m; sourceTree = "<group>"; };
 		96E3909F1768FB8600D06D9D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -207,6 +219,7 @@
 		967C75111768D2B90034C1A3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				96D9264D17700235005441F3 /* DataFilters */,
 				967C75121768D2C60034C1A3 /* TestData.h */,
 				967C75131768D2C60034C1A3 /* TestData.m */,
 				96E3909B1768F23D00D06D9D /* NetworkData.h */,
@@ -221,8 +234,23 @@
 				96D92649176F57A3005441F3 /* BaseTriviaController.h */,
 				96D9264A176F57A3005441F3 /* BaseTriviaController.m */,
 				96D9264C176F58DB005441F3 /* TriviaQuestionDataSource.h */,
+				96D9265417700A13005441F3 /* DefineWordController.h */,
+				96D9265517700A13005441F3 /* DefineWordController.m */,
+				96D9265717700A5F005441F3 /* FindWordFromDefinitionController.h */,
+				96D9265817700A5F005441F3 /* FindWordFromDefinitionController.m */,
 			);
 			name = GameControllers;
+			sourceTree = "<group>";
+		};
+		96D9264D17700235005441F3 /* DataFilters */ = {
+			isa = PBXGroup;
+			children = (
+				96D9264E17700305005441F3 /* DefinitionsFilter.h */,
+				96D9264F17700305005441F3 /* DefinitionsFilter.m */,
+				96D9265117700981005441F3 /* GroupsFilter.h */,
+				96D9265217700981005441F3 /* GroupsFilter.m */,
+			);
+			name = DataFilters;
 			sourceTree = "<group>";
 		};
 		96E3909E1768FAF700D06D9D /* ViewControllers */ = {
@@ -326,6 +354,10 @@
 				96652EE9176C201700CD5A52 /* WordDetailsViewController.m in Sources */,
 				96D2D8FA176C74E400B90F15 /* FlashCardBaseView.m in Sources */,
 				96D9264B176F57A3005441F3 /* BaseTriviaController.m in Sources */,
+				96D9265017700305005441F3 /* DefinitionsFilter.m in Sources */,
+				96D9265317700981005441F3 /* GroupsFilter.m in Sources */,
+				96D9265617700A13005441F3 /* DefineWordController.m in Sources */,
+				96D9265917700A60005441F3 /* FindWordFromDefinitionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

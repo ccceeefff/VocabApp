@@ -11,6 +11,10 @@
 #import "TestData.h"
 #import "NetworkData.h"
 #import "NSMutableArray+Shuffle.h"
+#import "DefinitionsFilter.h"
+
+#import "DefineWordController.h"
+#import "FindWordFromDefinitionController.h"
 
 @interface TrainingViewController ()
 
@@ -18,17 +22,53 @@
 
 @implementation TrainingViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id) initWithTrainingType:(TrainingType)type
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
         // Custom initialization
+        
+        trainingType = type;
+        
         currentWordView = nil;
         words = [[NSMutableArray alloc] init];
-        [words addObjectsFromArray:[[NetworkData sharedData] cachedData]];
+        [self gatherWords];
+        [words shuffle];
         currentIndex = 0;
     }
     return self;
+}
+
+- (void) gatherWords
+{
+    switch (trainingType) {
+        case TrainingTypeDefineWord:
+            [words addObjectsFromArray:[[DefinitionsFilter sharedFilter] cachedData]];
+            break;
+        case TrainingTypeWordFromDefinition:
+            [words addObjectsFromArray:[[DefinitionsFilter sharedFilter] cachedData]];
+            break;
+        default:
+            [words addObjectsFromArray:[[NetworkData sharedData] cachedData]];
+            break;
+    }
+}
+
+- (Class) getControllerClassForType:(TrainingType)type
+{
+    Class aClass;
+    switch (trainingType) {
+        case TrainingTypeDefineWord:
+            aClass = [DefineWordController class];
+            break;
+        case TrainingTypeWordFromDefinition:
+            aClass = [FindWordFromDefinitionController class];
+            break;
+        default:
+            aClass = [BaseTriviaController class];
+            break;
+    }
+    return aClass;
 }
 
 - (void)viewDidLoad
@@ -39,15 +79,44 @@
     
     [self showWord:[words objectAtIndex:currentIndex] fromRight:YES];
     
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Previous", @"Next", nil]];
+    segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
+    [segmentedControl addTarget:self action:@selector(segmentedControlPressed:) forControlEvents:UIControlEventValueChanged];
+    segmentedControl.momentary = YES;
+    
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:segmentedControl] autorelease];
+    [segmentedControl release];
+    
+    self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStyleDone target:self action:@selector(returnToHome)] autorelease];
+    
+    /*
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStyleBordered target:self action:@selector(nextWord)] autorelease];
     
     self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Previous" style:UIBarButtonItemStyleBordered target:self action:@selector(lastWord)] autorelease];
-    
+    */
+}
+
+- (void) returnToHome
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) segmentedControlPressed:(UISegmentedControl *)control
+{
+    switch (control.selectedSegmentIndex) {
+        case 0:
+            [self lastWord];
+            break;
+        case 1:
+        default:
+            [self nextWord];
+            break;
+    }
 }
 
 - (void) showWord:(SDWord *)word fromRight:(BOOL)RightOrLeft
 {
-    BaseTriviaController *controller = [[BaseTriviaController alloc] initWithWord:word];
+    BaseTriviaController *controller = [[[self getControllerClassForType:trainingType] alloc] initWithWord:word];
     FlashCardBaseView *wordView = [[FlashCardBaseView alloc] initWithFrame:self.view.bounds andController:controller];
     wordView.autoresizingMask = ~UIViewAutoresizingNone;
     [controller release];

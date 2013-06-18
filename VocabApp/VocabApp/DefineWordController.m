@@ -1,28 +1,14 @@
 //
-//  BaseTriviaController.m
+//  DefineWordController.m
 //  VocabApp
 //
-//  Created by Cef Ramirez on 6/17/13.
+//  Created by Cef Ramirez on 6/18/13.
 //  Copyright (c) 2013 SpiderDog Studios. All rights reserved.
 //
 
-#import "BaseTriviaController.h"
+#import "DefineWordController.h"
 
-@implementation BaseTriviaController
-
-@synthesize word = _word;
-
-- (id) initWithWord:(SDWord *)word
-{
-    self = [super init];
-    if(self != nil){
-        
-        _word = [word retain];
-        [self generateChoices];
-        
-    }
-    return self;
-}
+@implementation DefineWordController
 
 - (void) generateChoices
 {
@@ -32,13 +18,6 @@
     [choices shuffle];
     
     _choices = [[NSArray arrayWithArray:choices] retain];
-}
-
-- (void) dealloc
-{
-    [_word release];
-    [_choices release];
-    [super dealloc];
 }
 
 #pragma mark - Trivia Data Source
