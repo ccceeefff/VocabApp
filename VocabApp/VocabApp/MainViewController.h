@@ -12,6 +12,8 @@
 {
     UIButton *trainingButton;
     UIButton *trainingButton2;
+    UIButton *trainingButton3;
+    UIButton *trainingButton4;
     UIButton *listButton;
 }
 

@@ -30,6 +30,9 @@
 		96D9265317700981005441F3 /* GroupsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9265217700981005441F3 /* GroupsFilter.m */; };
 		96D9265617700A13005441F3 /* DefineWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9265517700A13005441F3 /* DefineWordController.m */; };
 		96D9265917700A60005441F3 /* FindWordFromDefinitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9265817700A5F005441F3 /* FindWordFromDefinitionController.m */; };
+		96E17BC517709C1C0093A34B /* ContextsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E17BC417709C1C0093A34B /* ContextsFilter.m */; };
+		96E17BC817709D1A0093A34B /* FindContextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E17BC717709D1A0093A34B /* FindContextController.m */; };
+		96E17BCB1770A5CF0093A34B /* WordInContextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E17BCA1770A5CF0093A34B /* WordInContextController.m */; };
 		96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3909C1768F23D00D06D9D /* NetworkData.m */; };
 		96E390A11768FB8600D06D9D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A01768FB8600D06D9D /* MainViewController.m */; };
 		96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A417697DF400D06D9D /* NSMutableArray+Shuffle.m */; };
@@ -78,6 +81,12 @@
 		96D9265517700A13005441F3 /* DefineWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineWordController.m; sourceTree = "<group>"; };
 		96D9265717700A5F005441F3 /* FindWordFromDefinitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWordFromDefinitionController.h; sourceTree = "<group>"; };
 		96D9265817700A5F005441F3 /* FindWordFromDefinitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWordFromDefinitionController.m; sourceTree = "<group>"; };
+		96E17BC317709C1C0093A34B /* ContextsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextsFilter.h; sourceTree = "<group>"; };
+		96E17BC417709C1C0093A34B /* ContextsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextsFilter.m; sourceTree = "<group>"; };
+		96E17BC617709D1A0093A34B /* FindContextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindContextController.h; sourceTree = "<group>"; };
+		96E17BC717709D1A0093A34B /* FindContextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindContextController.m; sourceTree = "<group>"; };
+		96E17BC91770A5CF0093A34B /* WordInContextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordInContextController.h; sourceTree = "<group>"; };
+		96E17BCA1770A5CF0093A34B /* WordInContextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordInContextController.m; sourceTree = "<group>"; };
 		96E3909B1768F23D00D06D9D /* NetworkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkData.h; sourceTree = "<group>"; };
 		96E3909C1768F23D00D06D9D /* NetworkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkData.m; sourceTree = "<group>"; };
 		96E3909F1768FB8600D06D9D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -238,6 +247,10 @@
 				96D9265517700A13005441F3 /* DefineWordController.m */,
 				96D9265717700A5F005441F3 /* FindWordFromDefinitionController.h */,
 				96D9265817700A5F005441F3 /* FindWordFromDefinitionController.m */,
+				96E17BC617709D1A0093A34B /* FindContextController.h */,
+				96E17BC717709D1A0093A34B /* FindContextController.m */,
+				96E17BC91770A5CF0093A34B /* WordInContextController.h */,
+				96E17BCA1770A5CF0093A34B /* WordInContextController.m */,
 			);
 			name = GameControllers;
 			sourceTree = "<group>";
@@ -249,6 +262,8 @@
 				96D9264F17700305005441F3 /* DefinitionsFilter.m */,
 				96D9265117700981005441F3 /* GroupsFilter.h */,
 				96D9265217700981005441F3 /* GroupsFilter.m */,
+				96E17BC317709C1C0093A34B /* ContextsFilter.h */,
+				96E17BC417709C1C0093A34B /* ContextsFilter.m */,
 			);
 			name = DataFilters;
 			sourceTree = "<group>";
@@ -358,6 +373,9 @@
 				96D9265317700981005441F3 /* GroupsFilter.m in Sources */,
 				96D9265617700A13005441F3 /* DefineWordController.m in Sources */,
 				96D9265917700A60005441F3 /* FindWordFromDefinitionController.m in Sources */,
+				96E17BC517709C1C0093A34B /* ContextsFilter.m in Sources */,
+				96E17BC817709D1A0093A34B /* FindContextController.m in Sources */,
+				96E17BCB1770A5CF0093A34B /* WordInContextController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

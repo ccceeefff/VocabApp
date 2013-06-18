@@ -101,9 +101,15 @@
         UILabel *questionView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 9999, 9999)];
         questionView.textColor = [UIColor blackColor];
         questionView.textAlignment = UITextAlignmentCenter;
-        questionView.numberOfLines = 999;
+        questionView.numberOfLines = 5;
         questionView.font = [UIFont boldSystemFontOfSize:56];
-        questionView.minimumFontSize = 30;
+        questionView.minimumFontSize = 20;
+        questionView.adjustsFontSizeToFitWidth = YES;
+        if([questionView respondsToSelector:@selector(setMinimumScaleFactor:)]){
+            questionView.minimumScaleFactor = 0.05;
+            questionView.adjustsLetterSpacingToFitWidth = YES;
+            questionView.textAlignment = NSTextAlignmentCenter;
+        }
         _questionView = questionView;
         [self addSubview:questionView];
     }
@@ -122,9 +128,15 @@
         answerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 9999, 9999)];
         answerView.textColor = [UIColor blackColor];
         answerView.textAlignment = UITextAlignmentLeft;
-        answerView.numberOfLines = 999;
+        answerView.numberOfLines = 5;
         answerView.font = [UIFont systemFontOfSize:24];
         answerView.minimumFontSize = 10;
+        answerView.adjustsFontSizeToFitWidth = YES;
+        if([answerView respondsToSelector:@selector(setMinimumScaleFactor:)]){
+            answerView.minimumScaleFactor = 0.05;
+            answerView.adjustsLetterSpacingToFitWidth = YES;
+            answerView.textAlignment = NSTextAlignmentLeft;
+        }
         [_answerViews replaceObjectAtIndex:index withObject:answerView];
         [self addSubview:answerView];
         [answerView release];

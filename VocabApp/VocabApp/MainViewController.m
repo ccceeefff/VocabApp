@@ -63,18 +63,40 @@
     trainingButton2.tag = TrainingTypeWordFromDefinition;
     [trainingButton2 addTarget:self action:@selector(trainingPressed:) forControlEvents:UIControlEventTouchUpInside];
     
+    trainingButton3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [trainingButton3 setTitle:@"Training: Find Context" forState:UIControlStateNormal];
+    [self.view addSubview:trainingButton3];
+    trainingButton3.frame = CGRectMake(0, 0, 9999, 9999);
+    [trainingButton3 sizeToFit];
+    trainingButton3.center = CGPointMake(trainingButton.center.x, trainingButton.center.y + 60);
+    trainingButton3.autoresizingMask = ~UIViewAutoresizingNone;
+    trainingButton3.tag = TrainingTypeFindContext;
+    [trainingButton3 addTarget:self action:@selector(trainingPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    trainingButton4 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [trainingButton4 setTitle:@"Training: Use in Context" forState:UIControlStateNormal];
+    [self.view addSubview:trainingButton4];
+    trainingButton4.frame = CGRectMake(0, 0, 9999, 9999);
+    [trainingButton4 sizeToFit];
+    trainingButton4.center = CGPointMake(trainingButton.center.x, trainingButton3.center.y + 60);
+    trainingButton4.autoresizingMask = ~UIViewAutoresizingNone;
+    trainingButton4.tag = TrainingTypeUseInContext;
+    [trainingButton4 addTarget:self action:@selector(trainingPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
     listButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [listButton setTitle:@"List" forState:UIControlStateNormal];
     [self.view addSubview:listButton];
     listButton.frame = CGRectMake(0, 0, 9999, 9999);
     [listButton sizeToFit];
-    listButton.center = CGPointMake(trainingButton.center.x, trainingButton.center.y + 60);
+    listButton.center = CGPointMake(trainingButton.center.x, trainingButton4.center.y + 60);
     listButton.autoresizingMask = ~UIViewAutoresizingNone;
     [listButton addTarget:self action:@selector(listPressed) forControlEvents:UIControlEventTouchUpInside];
     
     if([[NetworkData sharedData] cachedData] == nil){
         trainingButton.enabled = NO;
         trainingButton2.enabled = NO;
+        trainingButton3.enabled = NO;
+        trainingButton4.enabled = NO;
         listButton.enabled = NO;
     }
     
@@ -91,10 +113,14 @@
         trainingButton.enabled = NO;
         listButton.enabled = NO;
         trainingButton2.enabled = NO;
+        trainingButton3.enabled = NO;
+        trainingButton4.enabled = NO;
     } else {
         trainingButton.enabled = YES;
         listButton.enabled = YES;
         trainingButton2.enabled = YES;
+        trainingButton3.enabled = YES;
+        trainingButton4.enabled = YES;
     }
 }
 
@@ -132,6 +158,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     trainingButton = nil;
+    trainingButton2 = nil;
+    trainingButton3 = nil;
     listButton = nil;
 }
 

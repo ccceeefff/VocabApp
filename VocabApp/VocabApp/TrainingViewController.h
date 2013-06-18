@@ -16,6 +16,8 @@
 typedef enum {
     TrainingTypeDefineWord,
     TrainingTypeWordFromDefinition,
+    TrainingTypeFindContext,
+    TrainingTypeUseInContext,
     TrainingTypeDefault
 } TrainingType;
 

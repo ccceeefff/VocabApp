@@ -12,9 +12,12 @@
 #import "NetworkData.h"
 #import "NSMutableArray+Shuffle.h"
 #import "DefinitionsFilter.h"
+#import "ContextsFilter.h"
 
 #import "DefineWordController.h"
 #import "FindWordFromDefinitionController.h"
+#import "FindContextController.h"
+#import "WordInContextController.h"
 
 @interface TrainingViewController ()
 
@@ -43,10 +46,12 @@
 {
     switch (trainingType) {
         case TrainingTypeDefineWord:
-            [words addObjectsFromArray:[[DefinitionsFilter sharedFilter] cachedData]];
-            break;
         case TrainingTypeWordFromDefinition:
             [words addObjectsFromArray:[[DefinitionsFilter sharedFilter] cachedData]];
+            break;
+        case TrainingTypeFindContext:
+        case TrainingTypeUseInContext:
+            [words addObjectsFromArray:[[ContextsFilter sharedFilter] cachedData]];
             break;
         default:
             [words addObjectsFromArray:[[NetworkData sharedData] cachedData]];
@@ -63,6 +68,12 @@
             break;
         case TrainingTypeWordFromDefinition:
             aClass = [FindWordFromDefinitionController class];
+            break;
+        case TrainingTypeFindContext:
+            aClass = [FindContextController class];
+            break;
+        case TrainingTypeUseInContext:
+            aClass = [WordInContextController class];
             break;
         default:
             aClass = [BaseTriviaController class];
