@@ -33,6 +33,7 @@
 		96E17BC517709C1C0093A34B /* ContextsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E17BC417709C1C0093A34B /* ContextsFilter.m */; };
 		96E17BC817709D1A0093A34B /* FindContextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E17BC717709D1A0093A34B /* FindContextController.m */; };
 		96E17BCB1770A5CF0093A34B /* WordInContextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E17BCA1770A5CF0093A34B /* WordInContextController.m */; };
+		96E17BCE1770AD490093A34B /* FindWordGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E17BCD1770AD490093A34B /* FindWordGroupController.m */; };
 		96E3909D1768F23D00D06D9D /* NetworkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3909C1768F23D00D06D9D /* NetworkData.m */; };
 		96E390A11768FB8600D06D9D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A01768FB8600D06D9D /* MainViewController.m */; };
 		96E390A517697DF400D06D9D /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E390A417697DF400D06D9D /* NSMutableArray+Shuffle.m */; };
@@ -87,6 +88,8 @@
 		96E17BC717709D1A0093A34B /* FindContextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindContextController.m; sourceTree = "<group>"; };
 		96E17BC91770A5CF0093A34B /* WordInContextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordInContextController.h; sourceTree = "<group>"; };
 		96E17BCA1770A5CF0093A34B /* WordInContextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordInContextController.m; sourceTree = "<group>"; };
+		96E17BCC1770AD490093A34B /* FindWordGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWordGroupController.h; sourceTree = "<group>"; };
+		96E17BCD1770AD490093A34B /* FindWordGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWordGroupController.m; sourceTree = "<group>"; };
 		96E3909B1768F23D00D06D9D /* NetworkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkData.h; sourceTree = "<group>"; };
 		96E3909C1768F23D00D06D9D /* NetworkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkData.m; sourceTree = "<group>"; };
 		96E3909F1768FB8600D06D9D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -251,6 +254,8 @@
 				96E17BC717709D1A0093A34B /* FindContextController.m */,
 				96E17BC91770A5CF0093A34B /* WordInContextController.h */,
 				96E17BCA1770A5CF0093A34B /* WordInContextController.m */,
+				96E17BCC1770AD490093A34B /* FindWordGroupController.h */,
+				96E17BCD1770AD490093A34B /* FindWordGroupController.m */,
 			);
 			name = GameControllers;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				96E17BC517709C1C0093A34B /* ContextsFilter.m in Sources */,
 				96E17BC817709D1A0093A34B /* FindContextController.m in Sources */,
 				96E17BCB1770A5CF0093A34B /* WordInContextController.m in Sources */,
+				96E17BCE1770AD490093A34B /* FindWordGroupController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

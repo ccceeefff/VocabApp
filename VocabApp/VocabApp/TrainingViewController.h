@@ -18,6 +18,7 @@ typedef enum {
     TrainingTypeWordFromDefinition,
     TrainingTypeFindContext,
     TrainingTypeUseInContext,
+    TrainingTypeFindWordGroup,
     TrainingTypeDefault
 } TrainingType;
 
@@ -29,6 +30,7 @@ typedef enum {
     BOOL animating;
 
     TrainingType trainingType;
+    int score;
 }
 
 - (id) initWithTrainingType:(TrainingType)type;

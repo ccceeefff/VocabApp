@@ -12,11 +12,14 @@
 @interface GroupsFilter : NSObject
 {
     NSMutableArray *_words;
+    NSMutableSet *_wordGroups;
 }
 
 + (GroupsFilter *) sharedFilter;
 
 - (NSArray *) cachedData;
+
+- (NSArray *) otherWordGroups:(int)count differentFromGroups:(NSArray *)groups;
 
 - (SDWord *) randomWord;
 - (SDWord *) randomOtherWord:(SDWord *)word;

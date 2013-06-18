@@ -27,6 +27,7 @@
     self = [super init];
     if(self != nil){
         _words = nil;
+        _wordGroups = nil;
         [self refreshData];
     }
     return self;
@@ -35,23 +36,47 @@
 - (void) dealloc
 {
     [_words release];
+    [_wordGroups release];
     [super dealloc];
 }
 
 - (void) refreshData
 {
     [_words release]; _words = nil;
+    [_wordGroups release]; _wordGroups = nil;
     NSArray *cachedWords = [[NetworkData sharedData] cachedData];
     _words = [[NSMutableArray alloc] initWithArray:[cachedWords filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         SDWord *word = (SDWord *)evaluatedObject;
         return ([word.groups count] > 0);
     }]]];
     [_words shuffle];
+    
+    _wordGroups = [[NSMutableSet alloc] init];
+    for(SDWord *word in _words){
+        [_wordGroups addObjectsFromArray:word.groups];
+    }
 }
 
 - (NSString *) cachedData
 {
     return [NSArray arrayWithArray:_words];
+}
+
+- (NSArray *) otherWordGroups:(int)count differentFromGroups:(NSArray *)groups
+{
+    NSMutableSet *newSet = [NSMutableSet setWithArray:groups];
+    NSMutableArray *randomGroups = [NSMutableArray arrayWithArray:[_wordGroups allObjects]];
+    [randomGroups shuffle];
+
+    for(NSString *group in randomGroups){
+        if(![newSet containsObject:group]){
+            [newSet addObject:group];
+        }
+        
+        if([newSet count] >= count) break;
+    }
+
+    return [newSet allObjects];
 }
 
 - (SDWord *) randomWord

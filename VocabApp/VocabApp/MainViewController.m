@@ -48,7 +48,7 @@
     [self.view addSubview:trainingButton];
     trainingButton.frame = CGRectMake(0, 0, 9999, 9999);
     [trainingButton sizeToFit];
-    trainingButton.center = self.view.center;
+    trainingButton.center = CGPointMake(self.view.center.x, self.view.center.y - 120);
     trainingButton.autoresizingMask = ~UIViewAutoresizingNone;
     trainingButton.tag = TrainingTypeDefineWord;
     [trainingButton addTarget:self action:@selector(trainingPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -83,12 +83,22 @@
     trainingButton4.tag = TrainingTypeUseInContext;
     [trainingButton4 addTarget:self action:@selector(trainingPressed:) forControlEvents:UIControlEventTouchUpInside];
     
+    trainingButton5 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [trainingButton5 setTitle:@"Training: Word Groups" forState:UIControlStateNormal];
+    [self.view addSubview:trainingButton5];
+    trainingButton5.frame = CGRectMake(0, 0, 9999, 9999);
+    [trainingButton5 sizeToFit];
+    trainingButton5.center = CGPointMake(trainingButton.center.x, trainingButton4.center.y + 60);
+    trainingButton5.autoresizingMask = ~UIViewAutoresizingNone;
+    trainingButton5.tag = TrainingTypeFindWordGroup;
+    [trainingButton5 addTarget:self action:@selector(trainingPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
     listButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [listButton setTitle:@"List" forState:UIControlStateNormal];
     [self.view addSubview:listButton];
     listButton.frame = CGRectMake(0, 0, 9999, 9999);
     [listButton sizeToFit];
-    listButton.center = CGPointMake(trainingButton.center.x, trainingButton4.center.y + 60);
+    listButton.center = CGPointMake(trainingButton.center.x, trainingButton5.center.y + 60);
     listButton.autoresizingMask = ~UIViewAutoresizingNone;
     [listButton addTarget:self action:@selector(listPressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -97,6 +107,7 @@
         trainingButton2.enabled = NO;
         trainingButton3.enabled = NO;
         trainingButton4.enabled = NO;
+        trainingButton5.enabled = NO;
         listButton.enabled = NO;
     }
     
@@ -115,12 +126,14 @@
         trainingButton2.enabled = NO;
         trainingButton3.enabled = NO;
         trainingButton4.enabled = NO;
+        trainingButton5.enabled = NO;
     } else {
         trainingButton.enabled = YES;
         listButton.enabled = YES;
         trainingButton2.enabled = YES;
         trainingButton3.enabled = YES;
         trainingButton4.enabled = YES;
+        trainingButton5.enabled = NO;
     }
 }
 

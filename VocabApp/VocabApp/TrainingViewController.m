@@ -13,11 +13,13 @@
 #import "NSMutableArray+Shuffle.h"
 #import "DefinitionsFilter.h"
 #import "ContextsFilter.h"
+#import "GroupsFilter.h"
 
 #import "DefineWordController.h"
 #import "FindWordFromDefinitionController.h"
 #import "FindContextController.h"
 #import "WordInContextController.h"
+#import "FindWordGroupController.h"
 
 @interface TrainingViewController ()
 
@@ -38,6 +40,7 @@
         [self gatherWords];
         [words shuffle];
         currentIndex = 0;
+        score = 0;
     }
     return self;
 }
@@ -52,6 +55,9 @@
         case TrainingTypeFindContext:
         case TrainingTypeUseInContext:
             [words addObjectsFromArray:[[ContextsFilter sharedFilter] cachedData]];
+            break;
+        case TrainingTypeFindWordGroup:
+            [words addObjectsFromArray:[[GroupsFilter sharedFilter] cachedData]];
             break;
         default:
             [words addObjectsFromArray:[[NetworkData sharedData] cachedData]];
@@ -74,6 +80,9 @@
             break;
         case TrainingTypeUseInContext:
             aClass = [WordInContextController class];
+            break;
+        case TrainingTypeFindWordGroup:
+            aClass = [FindWordGroupController class];
             break;
         default:
             aClass = [BaseTriviaController class];
@@ -127,6 +136,8 @@
 
 - (void) flashCard:(FlashCardBaseView *)card answeredCorrectly:(BOOL)yesOrNo
 {
+    score += (yesOrNo ? 1 : -1);
+    self.navigationItem.title = [NSString stringWithFormat:@"%i/%i [Score: %i]", currentIndex+1, [words count], score];
     if(yesOrNo){
         [self nextWord];
     }
@@ -151,7 +162,7 @@
         [prevWord removeFromSuperview];
         [prevWord release];
         animating = NO;
-        self.navigationItem.title = [NSString stringWithFormat:@"%i/%i", currentIndex+1, [words count]];
+        self.navigationItem.title = [NSString stringWithFormat:@"%i/%i [Score: %i]", currentIndex+1, [words count], score];
     }];
     
     [wordView release];
