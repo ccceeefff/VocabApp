@@ -17,10 +17,11 @@
     UIView *_questionView;
     NSMutableArray *_answerViews;
     NSMutableArray *_answerButtons;
-    
+
 }
 
 @property (nonatomic, readonly) BaseTriviaController *controller;
+@property (nonatomic, assign) id delegate;
 
 - (id) initWithFrame:(CGRect)frame andController:(BaseTriviaController *)controller;
 
@@ -30,5 +31,11 @@
 - (UIView *) getQuestionView;
 - (UIView *) getViewForAnswerAtIndex:(NSUInteger)index;
 - (UIButton *) getButtonForChoiceAtIndex:(NSUInteger)index;
+
+@end
+
+@protocol FlashCardDelegate <NSObject>
+
+- (void) flashCard:(FlashCardBaseView *)card answeredCorrectly:(BOOL)yesOrNo;
 
 @end

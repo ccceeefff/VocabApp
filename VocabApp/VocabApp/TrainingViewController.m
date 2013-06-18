@@ -114,10 +114,18 @@
     }
 }
 
+- (void) flashCard:(FlashCardBaseView *)card answeredCorrectly:(BOOL)yesOrNo
+{
+    if(yesOrNo){
+        [self nextWord];
+    }
+}
+
 - (void) showWord:(SDWord *)word fromRight:(BOOL)RightOrLeft
 {
     BaseTriviaController *controller = [[[self getControllerClassForType:trainingType] alloc] initWithWord:word];
     FlashCardBaseView *wordView = [[FlashCardBaseView alloc] initWithFrame:self.view.bounds andController:controller];
+    wordView.delegate = self;
     wordView.autoresizingMask = ~UIViewAutoresizingNone;
     [controller release];
     //wordView.word = word;

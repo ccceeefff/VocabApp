@@ -19,7 +19,7 @@ typedef enum {
     TrainingTypeDefault
 } TrainingType;
 
-@interface TrainingViewController : UIViewController
+@interface TrainingViewController : UIViewController <FlashCardDelegate>
 {
     FlashCardBaseView *currentWordView;
     NSMutableArray *words;

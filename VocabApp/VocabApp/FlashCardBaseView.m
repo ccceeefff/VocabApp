@@ -20,6 +20,7 @@
 @implementation FlashCardBaseView
 
 @synthesize controller = _controller;
+@synthesize delegate = _delegate;
 
 - (id)initWithFrame:(CGRect)frame andController:(BaseTriviaController *)controller
 {
@@ -81,9 +82,17 @@
 {
     BOOL correct = [_controller isAnswerCorrectAtIndex:sender.tag - kAnswerButtonTagBase];
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:(correct ? @"Correct!" : @"Wrong!") message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:(correct ? @"Correct!" : @"Wrong!") message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    alertView.tag = correct ? 1 : 0;
     [alertView show];
     [alertView release];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if([self.delegate respondsToSelector:@selector(flashCard:answeredCorrectly:)]){
+        [self.delegate flashCard:self answeredCorrectly:alertView.tag];
+    }
 }
 
 - (UIView *) getQuestionView
